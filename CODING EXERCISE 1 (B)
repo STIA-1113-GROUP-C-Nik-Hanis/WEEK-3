@@ -1,0 +1,28 @@
+package NumericalData;
+
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double radius = 5.5 ;
+		double height = 12.4 ;
+		double surfaceArea ;
+		double baseArea ;
+		double volume ;
+		final double PI = 3.14159265;
+
+		surfaceArea = (2 * PI * radius * height) + (2 * PI * (radius * radius));
+		baseArea = PI * (radius * radius);
+		volume = baseArea * height;
+
+		System.out.printf("The surfaceArea is %.2f " , surfaceArea); 
+		
+		System.out.printf("\nThe baseArea is %.2f " , baseArea );
+		
+		System.out.printf("\nThe volume is %.2f " , volume );
+		
+
+	}
+
+}
